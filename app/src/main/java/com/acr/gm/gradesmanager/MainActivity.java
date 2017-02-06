@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
 
             holder.Item_name.setText(classes.get(position));
             holder.Item_name.setTypeface(tf);
-            holder.Item_name.addTextChangedListener(new TextWatcher() {
+           /* holder.Item_name.addTextChangedListener(new TextWatcher() {
 
                 @Override
                 public void onTextChanged(CharSequence arg0, int arg1, int arg2, int arg3) {
@@ -160,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
                     classes.set(holder.ref,arg0.toString());
                 }
             });
-
+*/
             return convertView;
         }
 

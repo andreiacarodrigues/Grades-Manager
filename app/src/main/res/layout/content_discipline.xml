@@ -13,10 +13,10 @@
     tools:showIn="@layout/activity_discipline">
 
     <ListView
+        android:layout_marginTop="100dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/listView2"
-        android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:layout_alignBottom="@+id/plus"
         android:descendantFocusability="afterDescendants"
@@ -35,6 +35,47 @@
         app:elevation="6dp"
         app:backgroundTint="#ff9dd9"
         android:background="#ff9dd9" />
+
+    <LinearLayout android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:id="@+id/linearLayout" />
+
+
+    <TextView
+        android:text="Total:"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/grade_title"
+        android:layout_below="@+id/editDisciplineName"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:text="0.0"
+        android:paddingLeft="5dp"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/grade_title"
+        android:layout_toEndOf="@+id/grade_title"
+        android:id="@+id/grade_total" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Discipline"
+        android:background="@null"
+        android:ems="10"
+        android:id="@+id/editDisciplineName"
+        android:textSize="40sp"
+        android:paddingLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
 
 
 </RelativeLayout>
